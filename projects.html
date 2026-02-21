@@ -12,25 +12,34 @@
         <div class="container">
             <div class="logo">Portfolio</div>
             <ul>
-                <li><a href="Main.HTML">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Main.HTML" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
+
+            <!-- Language Selector -->
+            <label class="switch">
+                <input class="cb" type="checkbox" />
+                <span class="toggle">
+                    <span class="left">PT</span>
+                    <span class="right">EN</span>
+                </span>
+            </label>
         </div>
     </nav>
 
     <!-- Projects Section -->
     <section class="projects">
         <div class="container">
-            <h2>Featured Projects</h2>
+            <h2 data-i18n="projects.title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">💻</div>
                     <div class="project-info">
-                        <h3>Project One</h3>
-                        <p>A responsive web application built with modern technologies to solve real-world problems.</p>
+                        <h3 data-i18n="projects.p1.title">Project One</h3>
+                        <p data-i18n="projects.p1.desc">A responsive web application built with modern technologies to solve real-world problems.</p>
                         <div class="project-tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
@@ -42,8 +51,8 @@
                 <div class="project-card">
                     <div class="project-image">🎨</div>
                     <div class="project-info">
-                        <h3>Project Two</h3>
-                        <p>An elegant UI/UX design implementation with attention to detail and user experience.</p>
+                        <h3 data-i18n="projects.p2.title">Project Two</h3>
+                        <p data-i18n="projects.p2.desc">An elegant UI/UX design implementation with attention to detail and user experience.</p>
                         <div class="project-tags">
                             <span class="tag">Design</span>
                             <span class="tag">React</span>
@@ -55,8 +64,8 @@
                 <div class="project-card">
                     <div class="project-image">🚀</div>
                     <div class="project-info">
-                        <h3>Project Three</h3>
-                        <p>A high-performance application optimized for speed and scalability across all platforms.</p>
+                        <h3 data-i18n="projects.p3.title">Project Three</h3>
+                        <p data-i18n="projects.p3.desc">A high-performance application optimized for speed and scalability across all platforms.</p>
                         <div class="project-tags">
                             <span class="tag">JavaScript</span>
                             <span class="tag">Node.js</span>
@@ -68,8 +77,8 @@
                 <div class="project-card">
                     <div class="project-image">📱</div>
                     <div class="project-info">
-                        <h3>Project Four</h3>
-                        <p>A mobile-first progressive web app with offline capabilities and stunning animations.</p>
+                        <h3 data-i18n="projects.p4.title">Project Four</h3>
+                        <p data-i18n="projects.p4.desc">A mobile-first progressive web app with offline capabilities and stunning animations.</p>
                         <div class="project-tags">
                             <span class="tag">React</span>
                             <span class="tag">PWA</span>
@@ -81,8 +90,8 @@
                 <div class="project-card">
                     <div class="project-image">🛠️</div>
                     <div class="project-info">
-                        <h3>Project Five</h3>
-                        <p>A developer tools project featuring automation and productivity enhancements for teams.</p>
+                        <h3 data-i18n="projects.p5.title">Project Five</h3>
+                        <p data-i18n="projects.p5.desc">A developer tools project featuring automation and productivity enhancements for teams.</p>
                         <div class="project-tags">
                             <span class="tag">Node.js</span>
                             <span class="tag">CLI</span>
@@ -94,8 +103,8 @@
                 <div class="project-card">
                     <div class="project-image">🎯</div>
                     <div class="project-info">
-                        <h3>Project Six</h3>
-                        <p>An analytics dashboard providing real-time insights and data visualization capabilities.</p>
+                        <h3 data-i18n="projects.p6.title">Project Six</h3>
+                        <p data-i18n="projects.p6.desc">An analytics dashboard providing real-time insights and data visualization capabilities.</p>
                         <div class="project-tags">
                             <span class="tag">Vue.js</span>
                             <span class="tag">Dashboard</span>
@@ -109,8 +118,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
-        <p>Designed with ❤️ and built with code.</p>
+        <p data-i18n="footer.line1">&copy; 2026 My Portfolio. All Rights Reserved.</p>
+        <p data-i18n="footer.line2">Designed with ❤️ and built with code.</p>
+        <script src="lang.js"></script>
     </footer>
 </body>
 </html>

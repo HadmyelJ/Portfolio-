@@ -7,36 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
+    
+    
+
+    
     <nav>
         <div class="container">
             <div class="logo">Portfolio</div>
             <ul>
-                <li><a href="Main.HTML">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Main.HTML" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
+
+            <!-- Language Selector -->
+            <label class="switch">
+                <input class="cb" type="checkbox" />
+                <span class="toggle">
+                    <span class="left">PT</span>
+                    <span class="right">ENG</span>
+                </span>
+            </label>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Creative Developer | Problem Solver | Tech Enthusiast</p>
+            <h1 data-i18n="hero.title">Welcome to My Portfolio</h1>
+            <p data-i18n="hero.subtitle">Creative Developer | Problem Solver | Tech Enthusiast</p>
             <div class="cta-buttons">
-                <a href="projects.html" class="btn btn-primary">View My Work</a>
-                <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                <a href="projects.html" class="btn btn-primary" data-i18n="hero.view">View My Work</a>
+                <a href="contact.html" class="btn btn-secondary" data-i18n="hero.contact">Get In Touch</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
-        <p>Designed with ❤️ and built with code.</p>
+        <p data-i18n="footer.line1">&copy; 2026 My Portfolio. All Rights Reserved.</p>
+        <p data-i18n="footer.line2">Designed with ❤️ and built with code.</p>
     </footer>
+    <script src="lang.js"></script>
 </body>
 </html>

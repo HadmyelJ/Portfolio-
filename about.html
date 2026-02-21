@@ -12,37 +12,34 @@
         <div class="container">
             <div class="logo">Portfolio</div>
             <ul>
-                <li><a href="Main.HTML">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Main.HTML" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
+
+            <!-- Language Selector -->
+            <label class="switch">
+                <input class="cb" type="checkbox" />
+                <span class="toggle">
+                    <span class="left">PT</span>
+                    <span class="right">EN</span>
+                </span>
+            </label>
         </div>
     </nav>
 
     <!-- About Section -->
     <section class="about">
         <div class="container">
-            <h2>About Me</h2>
+            <h2 data-i18n="about.title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        Welcome! I'm a passionate developer with a keen eye for creating beautiful and functional web experiences. 
-                        With expertise in modern web technologies, I love turning ideas into reality.
-                    </p>
-                    <p>
-                        My journey in tech has been driven by a curiosity to learn and grow. I believe in writing clean, 
-                        maintainable code and creating solutions that make a real impact.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-                        or enjoying the creative process of building something new.
-                    </p>
-                    <p>
-                        I'm committed to continuous learning and staying up-to-date with the latest industry trends and best practices. 
-                        Let's connect and build something amazing together!
-                    </p>
+                    <p data-i18n="about.p1">Welcome! I'm a passionate developer with a keen eye for creating beautiful and functional web experiences. With expertise in modern web technologies, I love turning ideas into reality.</p>
+                    <p data-i18n="about.p2">My journey in tech has been driven by a curiosity to learn and grow. I believe in writing clean, maintainable code and creating solutions that make a real impact.</p>
+                    <p data-i18n="about.p3">When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying the creative process of building something new.</p>
+                    <p data-i18n="about.p4">I'm committed to continuous learning and staying up-to-date with the latest industry trends and best practices. Let's connect and build something amazing together!</p>
                 </div>
                 <div class="about-image">
                     [Your Photo Here]
@@ -53,8 +50,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
-        <p>Designed with ❤️ and built with code.</p>
+        <p data-i18n="footer.line1">&copy; 2026 My Portfolio. All Rights Reserved.</p>
+        <p data-i18n="footer.line2">Designed with ❤️ and built with code.</p>
+        <script src="lang.js"></script>
     </footer>
 </body>
 </html>

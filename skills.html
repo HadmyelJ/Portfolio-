@@ -12,48 +12,57 @@
         <div class="container">
             <div class="logo">Portfolio</div>
             <ul>
-                <li><a href="Main.HTML">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Main.HTML" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
+
+            <!-- Language Selector -->
+            <label class="switch">
+                <input class="cb" type="checkbox" />
+                <span class="toggle">
+                    <span class="left">PT</span>
+                    <span class="right">EN</span>
+                </span>
+            </label>
         </div>
     </nav>
 
     <!-- Skills Section -->
     <section class="skills">
         <div class="container">
-            <h2>My Skills</h2>
+            <h2 data-i18n="skills.title">My Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>Frontend Development</h3>
-                    <p> HTML, CSS, JavaScript, React, Responsive Design </p>
+                    <h3 data-i18n="skills.s1.title">Frontend Development</h3>
+                    <p data-i18n="skills.s1.desc">HTML, CSS, JavaScript, React, Responsive Design</p>
                 </div>
 
                 <div class="skill-card">
-                    <h3>Backend Development</h3>
-                    <p>Node.js, Python, Django, Database Design, REST APIs </p>
+                    <h3 data-i18n="skills.s2.title">Backend Development</h3>
+                    <p data-i18n="skills.s2.desc">Node.js, Python, Django, Database Design, REST APIs</p>
                 </div>
 
                 <div class="skill-card">
-                    <h3>Tools & Technologies</h3>
-                    <p> Git, Docker, VS Code, GitHub </p>
+                    <h3 data-i18n="skills.s3.title">Tools & Technologies</h3>
+                    <p data-i18n="skills.s3.desc">Git, Docker, VS Code, GitHub</p>
                 </div>
 
                 <div class="skill-card">
-                    <h3>Databases</h3>
-                    <p> MongoDB, MySQL, Firebase </p>
+                    <h3 data-i18n="skills.s4.title">Databases</h3>
+                    <p data-i18n="skills.s4.desc">MongoDB, MySQL, Firebase</p>
                 </div>
 
                 <div class="skill-card">
-                    <h3>Soft Skills</h3>
-                    <p> Problem Solving, Communication, Team Collaboration, Time Management, Leadership </p>
+                    <h3 data-i18n="skills.s5.title">Soft Skills</h3>
+                    <p data-i18n="skills.s5.desc">Problem Solving, Communication, Team Collaboration, Time Management, Leadership</p>
                 </div>
 
                 <div class="skill-card">
-                    <h3>Other Skills</h3>
-                    <p> UI/UX Design, Web Performance Optimization, Testing, Agile, Scrum </p>
+                    <h3 data-i18n="skills.s6.title">Other Skills</h3>
+                    <p data-i18n="skills.s6.desc">UI/UX Design, Web Performance Optimization, Testing, Agile, Scrum</p>
                 </div>
             </div>
         </div>
@@ -61,8 +70,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
-        <p>Designed with ❤️ and built with code.</p>
+        <p data-i18n="footer.line1">&copy; 2026 My Portfolio. All Rights Reserved.</p>
+        <p data-i18n="footer.line2">Designed with ❤️ and built with code.</p>
+        <script src="lang.js"></script>
     </footer>
 </body>
 </html>

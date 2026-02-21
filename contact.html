@@ -12,24 +12,33 @@
         <div class="container">
             <div class="logo">Portfolio</div>
             <ul>
-                <li><a href="Main.HTML">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Main.HTML" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
+
+            <!-- Language Selector -->
+            <label class="switch">
+                <input class="cb" type="checkbox" />
+                <span class="toggle">
+                    <span class="left">PT</span>
+                    <span class="right">EN</span>
+                </span>
+            </label>
         </div>
     </nav>
 
     <!-- Contact Section -->
     <section class="contact">
         <div class="container">
-            <h2>Let's Work Together</h2>
-            <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+            <h2 data-i18n="contact.title">Let's Work Together</h2>
+            <p data-i18n="contact.p">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
             <div class="contact-links">
-                <a href="mailto:hadmyel1@outlook.com">Email Me</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                <a href="https://github.com/HadmyelJ" target="_blank">GitHub</a>
+                <a href="mailto:hadmyel1@outlook.com" data-i18n="contact.email">Email Me</a>
+                <a href="https://linkedin.com" target="_blank" data-i18n="contact.linkedin">LinkedIn</a>
+                <a href="https://github.com/HadmyelJ" target="_blank" data-i18n="contact.github">GitHub</a>
                <!-- <a href="https://twitter.com" target="_blank">Twitter</a> -->
             </div>
 
@@ -41,8 +50,8 @@
                         <p><a href="mailto:hadmyel1@outlook.com" style="color: #667eea; text-decoration: none;">hadmyel1@outlook.com</a></p>
                     </div> -->
                     <div>
-                        <h4 style="color: #667eea; margin-bottom: 0.5rem;">Location</h4>
-                        <p>Current living in London, Uk. Planing to move to Zürich, Switzerland </p>
+                        <h4 style="color: #667eea; margin-bottom: 0.5rem;" data-i18n="contact.locationTitle">Location</h4>
+                        <p data-i18n="contact.location">Current living in London, Uk. Planing to move to Zürich, Switzerland</p>
                     </div>
                   <!--  <div>
                         <h4 style="color: #667eea; margin-bottom: 0.5rem;">Phone</h4>
@@ -55,8 +64,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
-        <p>Designed with ❤️ and built with code.</p>
+        <p data-i18n="footer.line1">&copy; 2026 My Portfolio. All Rights Reserved.</p>
+        <p data-i18n="footer.line2">Designed with ❤️ and built with code.</p>
+        <script src="lang.js"></script>
     </footer>
 </body>
 </html>
