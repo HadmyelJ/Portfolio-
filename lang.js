@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    nav: { home: 'Home', about: 'About', projects: 'Projects', skills: 'Skills', contact: 'Contact' },
+    nav: { home: 'Home',SampleAuth:'Sample AuTH', about: 'About', projects: 'Projects', skills: 'Skills', contact: 'Contact' },
     hero: {
       title: 'Welcome to My Portfolio',
       subtitle: 'Creative Developer | Problem Solver | Tech Enthusiast',
@@ -41,10 +41,16 @@ const translations = {
       github: 'GitHub',
       locationTitle: 'Location',
       location: 'Current living in London, Uk. Planing to move to Zürich, Switzerland'
+    },
+    AuthSample:{
+      title:'Authentication Example',
+      p1: 'This is a sample page to demonstrate authentication features.',
+      p2: 'Here you can implement login, registration, and other auth-related functionalities',
+      
     }
   },
   pt: {
-    nav: { home: 'Início', about: 'Sobre', projects: 'Projetos', skills: 'Habilidades', contact: 'Contato' },
+    nav: { home: 'Início',SampleAuth: 'Exmplo AuTH', about: 'Sobre', projects: 'Projetos', skills: 'Habilidades', contact: 'Contato' },
     hero: {
       title: 'Bem-vindo ao Meu Portfólio',
       subtitle: 'Desenvolvedor Criativo | Solucionador de Problemas | Entusiasta de Tecnologia',
@@ -85,6 +91,14 @@ const translations = {
       github: 'GitHub',
       locationTitle: 'Localização',
       location: 'Atualmente morando em Londres, Reino Unido. Pretendo me mudar para Zurique, Suíça'
+    },
+
+    AuthSample:{
+      title:'Exemplo de Autenticação',
+      p1: 'Esta é uma página de exemplo para demonstrar os recursos de autenticação.',
+      p2: 'Aqui você pode implementar funcionalidades de login, cadastro e outras relacionadas à autenticação.',
+      
+
     }
   }
 };
