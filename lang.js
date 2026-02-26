@@ -110,6 +110,7 @@ const translations = {
       title:'Exemplo de Autenticação',
       p1: 'Esta é uma página de exemplo para demonstrar os recursos de autenticação.',
       p2: 'Aqui você pode implementar funcionalidades de login, cadastro e outras relacionadas à autenticação.',
+    createAccount: 'Criar Conta',    signInTitle: 'Entrar',    signupOrEmail: 'ou use seu e-mail para se registrar',    orUseAccount: 'ou use sua conta',    forgotPassword: 'Esqueceu sua senha?',    signUpButton: 'Cadastrar',    signInButton: 'Entrar',    overlayWelcomeBack: 'Bem-vindo de volta!',    overlayWelcomeBackText: 'Para continuar conectado conosco, por favor faça login com suas informações pessoais',    overlayHello: 'Olá, Amigo!',    overlayHelloText: 'Insira seus dados pessoais e comece sua jornada conosco',    namePlaceholder: 'Nome',    emailPlaceholder: 'Email',    passwordPlaceholder: 'Senha'
       
 
     }
