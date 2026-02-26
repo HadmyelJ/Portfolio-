@@ -46,7 +46,20 @@ const translations = {
       title:'Authentication Example',
       p1: 'This is a sample page to demonstrate authentication features.',
       p2: 'Here you can implement login, registration, and other auth-related functionalities',
-      
+      createAccount: 'Create Account',
+      signInTitle: 'Sign in',
+      signupOrEmail: 'or use your email for registration',
+      orUseAccount: 'or use your account',
+      forgotPassword: 'Forgot your password?',
+      signUpButton: 'Sign Up',
+      signInButton: 'Sign In',
+      overlayWelcomeBack: 'Welcome Back!',
+      overlayWelcomeBackText: 'To keep connected with us please login with your personal info',
+      overlayHello: 'Hello, Friend!',
+      overlayHelloText: 'Enter your personal details and start journey with us',
+      namePlaceholder: 'Name',
+      emailPlaceholder: 'Email',
+      passwordPlaceholder: 'Password'
     }
   },
   pt: {
@@ -115,6 +128,18 @@ function applyTranslations(lang) {
       else { value = undefined; break; }
     }
     if (value !== undefined) el.innerHTML = value;
+  });
+
+  // handle placeholder translations if specified
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    const parts = key.split('.');
+    let value = translations[lang];
+    for (const p of parts) {
+      if (value && Object.prototype.hasOwnProperty.call(value, p)) value = value[p];
+      else { value = undefined; break; }
+    }
+    if (value !== undefined) el.setAttribute('placeholder', value);
   });
   const cb = document.querySelector('.cb');
   if (cb) cb.checked = (lang === 'en');
